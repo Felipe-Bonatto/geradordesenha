@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    background-color: #f8fafd;
+    color: #252525;
+    padding: 2rem 2rem 0 2rem;
+}
+
+main {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.hero {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.hero .title {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+.hero .subtitle {
+    font-size: 1.125rem;
+    color: #828282;
+}
+
+.box {
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px rgba(132, 148, 165, 0.5);
+    border-radius: 8px;
+    margin-bottom: 3rem;
+}
+
+.password {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.password .text {
+    flex: 1;
+}
+
+.password .text input {
+    font-family: "Inconsolata", monospace;
+    font-size: 3rem;
+    border: none;
+    outline: none;
+    cursor: default;
+    height: 52px;
+    width: 100%;
+    transition: all 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.password .text input.fontSmall {
+    font-size: 2rem;
+}
+
+.password .text input.fontMedia {
+    font-size: 1.5rem;
+}
+
+.password .text input.fontBig {
+    font-size: 1rem;
+}
+
+.password .actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+    margin-right: 10px;
+}
+
+.password .actions button:hover {
+    opacity: 10;
+}
+
+.password .actions button i {
+    font-size: 36px;
+}
+
+.indicator {
+    height: 10px;
+    background-color: #ddd;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.indicator .bar {
+    /* width: 90%; */
+    height: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: all 0.2s;
+}
+
+.indicator .bar.completed {
+    border-top-right-radius: 0;
+}
+
+.indicator .bar.critical {
+    background-color: #eb5757;
+}
+
+.indicator .bar.warning {
+    background-color: #f2c94c;
+}
+
+.indicator .bar.safe {
+    background-color: #27ae60;
+}
+
+.customize {
+    padding: 1rem 1.5rem;
+}
+
+.customize .title {
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    padding-bottom: 0.75rem;
+}
+
+.customize .actions {
+    display: flex;
+    gap: 3rem;
+    color: #828282;
+}
+
+.customize .password-length {
+    flex: 1;
+}
+
+.customize .password-length .slider {
+    appearance: none;
+    height: 10px;
+    background-color: #dddddd;
+    outline: none;
+    border-radius: 8px;
+    width: 100%;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    margin-top: 1rem;
+}
+
+.customize .password-length .slider:hover {
+    opacity: 1;
+}
+
+.customize .password-length .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: #0000FF;
+    cursor: pointer;
+}
+
+.customize .password-length .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: #0000FF;
+    cursor: pointer;
+}
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox-container input {    /* sumir com o check */
+    cursor: pointer;
+    accent-color: #0000FF;
+}
+
+.submit {
+    text-align: center;
+}
+
+.submit button {
+    background-color: #0000FF;
+    font-size: 1.375rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    transition: all 0.2s;
+}
+
+.submit button:hover {
+    background-color: #000080;
+}
+
+footer {
+    background-color: #e7eaed;
+    margin-top: 35px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 720px) {
+    .password {
+        padding: 1rem;
+    }
+    .password .text input {
+        font-size: 1.5rem;
+    }
+    .password .text input.fontSmall{
+        font-size: 1.5rem;
+    }
+    .password .text input.fontMedia {
+        font-size: 1rem;
+    }
+    .password .text input.fontBig {
+        font-size: 1rem;
+    }
+    .password .actions button i {
+        font-size: 28px;
+    }
+}

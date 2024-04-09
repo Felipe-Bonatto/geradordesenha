@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senha</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="./js/gerador.js" defer></script>
+
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <h1 class="title">Gerador de senha</h1>
+            <p class="subtitle">Utilize o nosso gerador online para criar uma senha forte e segura.</p>
+        </section> <!-- hero -->
+
+        <section class="box">
+            <div class="password">
+                <div class="text">
+                    <input type="text" name="password" id="password">
+                </div> <!--text  -->
+                <div class="actions">
+                    <button id="copy-1"><i class="bi bi-copy"></i></button>
+                    <button id="alterar"><i class="bi bi-arrow-repeat"></i></button>
+                </div> <!-- actions -->
+            </div> <!-- password -->
+            
+            <div class="indicator">
+                <div id="indicator-bar" class="bar">
+
+                </div>
+            </div>
+        </section> <!-- box -->
+
+        <section class="box customize">
+            <h3 class="title">Personalizar</h3>
+            <div class="actions">
+                <div class="password-length">
+                    <p>Tamanho: <span class="password-length-text" id="password-length-text">16</span></p>
+                    <input type="range" name="password-length" id="password-length" class="slider" value="16" min="4" max="60">
+                </div> <!-- password-length -->
+                <div class="config">
+
+                    <label class="checkbox-container">
+                        <span class="text">Maiúsculas</span>
+                        <input type="checkbox" id="uppercase-check" checked>
+                    </label>
+
+                    <label class="checkbox-container">
+                        <span class="text">Números</span>
+                        <input type="checkbox" id="number-check" checked>
+                    </label>
+
+                    <label class="checkbox-container">
+                        <span class="text">Símbolos</span>
+                        <input type="checkbox" id="symbol-check" checked>
+                    </label>
+                </div>
+            </div> <!-- actions -->
+        </section> <!-- box -->
+
+    
+        <div class="submit">
+            <button id="copy-2">Copiar senha</button>
+        </div>
+    </main>
+
+
+    <footer>
+        <div>🚀🚀 Felipe Bonatto 🚀🚀</div>
+    </footer>
+</body>
+</html>
